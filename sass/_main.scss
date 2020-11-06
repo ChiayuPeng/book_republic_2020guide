@@ -168,7 +168,7 @@ header {
             grid-area: titBox;
             width: 477px;
             color: #fff8e9;
-            padding: 45px 15px 45px 20px;
+            padding: 45px 15px 45px 19px;
             .sub-tit{
                 font-size: 24px;
                 font-weight: 500;
@@ -188,6 +188,10 @@ header {
                     margin-top: 20px;
                 }
             }
+            b{
+                font-size: 22px;
+            }
+
         }
         .box {
             position: relative;
@@ -736,6 +740,10 @@ section {
         &:hover{
             background-color: darken($header-bgcolor, 5%);
         }
+        i{
+            display: block;
+            transform: rotate(-180deg);
+        }
     }
 }
 .shin {
@@ -769,11 +777,11 @@ section {
 
     &.shin5 {
         bottom: 450px;
-        left: 10%;
+        right: 10%;
     }
 
     &.shin6 {
         bottom: 350px;
-        right: 10%;
+        left: 5%;
     }
 }
