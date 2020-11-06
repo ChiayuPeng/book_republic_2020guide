@@ -44,9 +44,15 @@ a {
         background-color: $header-bgcolor;
         text-align: center;
         color: #fff;
+        transition: all .5s;
         &:hover{
+            background-color:darken($header-bgcolor, 5%);
         }
     }
+}
+.deco{
+    width: 25px;
+    vertical-align: middle;
 }
 
 nav {
@@ -59,12 +65,27 @@ nav {
     .dp-flex{
         justify-content: space-between;
     }
+    h1{
+        font-size: 35px;
+        a{
+            display: block;
+            color: #fff;
+            padding: 11px 20px;
+        }
+    }
     ul{
         li{
             a{
                 display:block;
                 color: #fff;
-                padding: 23px 20px;
+                padding: 21px 20px 16px;
+                transition: all .3s;
+                &:hover {
+                    border-bottom: 5px solid $sub-color;
+                }
+                i {
+                    margin-right: 5px;
+                }
             }
         }
     }
@@ -180,6 +201,9 @@ header {
                     color: #2f4191;
                     font-size: 16px;
                     font-weight: 500;
+                    &:hover{
+                        background-color: darken($sub-color, 15%);
+                    }
                 }
             }
             &.box1 {
@@ -260,7 +284,10 @@ section {
     
 }
 .promote {
+    position: relative;
     background-color: $promote-bgcolor;
+    padding-top:70px;
+    padding-bottom: 0;
     .dp-flex{
         justify-content:center;
         &.video-group{
@@ -309,22 +336,24 @@ section {
         text-align: center;
         margin: 30px;
     }
+    .bg {
+        position: absolute;
+        bottom: -250px;
+        width: 0;
+        height: 0;
+        z-index: 0;
+        border-style: solid;
+        border-width: 250px 720px 0 720px;
+        border-color: $promote-bgcolor transparent transparent transparent;
+    }
+
 }
-// .raise-top {
-//     background-color: $raise-bgcolor;
-//     height: 325px;
-
-//     .container {
-//         background-image: url(../images/raise/raise.jpg);
-//         background-repeat: no-repeat;
-
-//         .paragraph {
-//             padding-top: 220px;
-//         }
-//     }
-
-// }
+.raise-top {
+    padding-top:330px;
+    background-color: $raise-bgcolor;
+}
 .raise {
+    padding-top: 35px;
     background-color: $raise-bgcolor;
     .content{
         width: 970px;
@@ -337,6 +366,12 @@ section {
             border: 2px solid #147432;
             padding: 25px 57px;
             margin-top: 40px;
+            a{
+                text-decoration: underline;
+                color: $main-color;
+                &:hover{
+                }
+            }
             &.moth1{
                 width: 505px;   
                 margin-right: 45px;
@@ -404,9 +439,13 @@ section {
                 }
                 &:hover{
                     background-color: rgba(247, 178, 12, 0.5);
+                    .icon-arrow_down {
+                        opacity: 1;
+                    }
                 }
             }
         }
+        
     }
 }
 .items{
@@ -434,6 +473,13 @@ section {
             width: 520px;
             text-align: left;
             border-right: 1px solid #fff;
+            .icon-arrow_down{
+                opacity: 0;
+                display: inline-block;
+                padding: 0 10px;
+                padding-left: 5px;
+                transform: rotate(270deg);
+            }
         }
         .publish {
             width:145px;
@@ -446,12 +492,12 @@ section {
         &:hover{
             background-color: rgba(255,255,255,0);
         }
-        div{
-            color: $main-color;
-        }
         .book_name{
             text-align: center;
-            border-right: 0;
+            border: 0;
+        }
+        div{
+            color: $main-color;
         }
     }
 
