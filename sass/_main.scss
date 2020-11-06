@@ -94,7 +94,7 @@ nav {
 }
 
 .paragraph {
-    width: 855px;
+    width: 970px;
     margin: 0 auto;
     text-align: center;
     font-size: 18px;
@@ -183,6 +183,9 @@ header {
             p{
                 font-size: 15px;
                 line-height: 1.5;
+                +p{
+                    margin-top: 20px;
+                }
             }
         }
         .box {
@@ -421,12 +424,14 @@ section {
     }
     .bg {
         position: absolute;
-        bottom: -250px;
+        bottom: -180px;
+        left: 50%;
+        transform: translateX(-50%);
         width: 0;
         height: 0;
         z-index: 0;
         border-style: solid;
-        border-width: 250px 720px 0 720px;
+        border-width: 180px 720px 0 720px;
         border-color: $promote-bgcolor transparent transparent transparent;
         .pic {
             width: 146px;
@@ -445,7 +450,7 @@ section {
 
 }
 .raise-top {
-    padding-top:330px;
+    padding-top:220px;
     background-color: $raise-bgcolor;
     .paragraph{
         background-image: url(../images/raise/raise_bg.png);
@@ -456,6 +461,7 @@ section {
 }
 .raise {
     padding-top: 35px;
+    padding-bottom: 35px;
     background-color: $raise-bgcolor;
     position: relative;
     .content{
@@ -495,13 +501,28 @@ section {
             &.method6 {
                 width: 375px;
                 padding:25px 20px 25px 50px;
+                align-self: baseline;
                 span{
                     font-style: italic;
                     font-weight: 500;
                     font-size: 30px;
                     line-height: 1;
                 }
+                .guidance {
+                    position: absolute;
+                    bottom: -65px;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    margin: 0;
+                    text-align: left;
+
+                    img {
+                        display: inline-block;
+                        width: 45%;
+                    }
+                }
             }
+            
             .side_pic{
                 position: absolute;
                 right: -10px;
@@ -547,13 +568,13 @@ section {
     }
     .bg {
         position: absolute;
-        bottom: -250px;
+        bottom: -200px;
         left: 50%;
         transform: translateX(-50%);
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 0 720px 250px 720px;
+        border-width: 0 720px 200px 720px;
         border-color: transparent transparent $book_guid-bgcolor transparent;
         .pic {
             width: 136px;
@@ -572,7 +593,7 @@ section {
 }
 .book_guid_top{
     background-color: $raise-bgcolor;
-    height: 250px;
+    height: 200px;
     padding-top: 200px;
 }
 .book_guid {
@@ -586,7 +607,7 @@ section {
         background-repeat: repeat-y;
     }
     .items{
-        margin: 60px 0;
+        margin: 80px 0;
         .deco{
             width: 62px;
             height: 62px;
@@ -700,12 +721,12 @@ section {
         left: 70px;
     }
     &.shin2 {
-        top: 450px;
+        top: 600px;
         left: 10%;
     }
     &.shin3 {
         top: 600px;
-        right: 10%;
+        right: 3%;
     }
     &.shin4 {
         top: 1200px;
