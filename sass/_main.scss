@@ -289,6 +289,17 @@ header {
                         color: $main-color;
                     }
                 }
+                a{
+                    padding: 0;
+                    text-align: left;
+                    width: auto;
+                    background-color: transparent;
+                    color: $main-color;
+                    margin-top: 30%;
+                    i{
+                        font-size: 35px;
+                    }
+                }
             }
         }
     }
@@ -388,12 +399,16 @@ section {
                 letter-spacing: 0;
                 font-weight: 500;
                 color: $sub-color;
+                transition: all .3s;
                 &::before{
                     content: '+';
                     display: inline-block;
                     font-weight: 300;
                     line-height: 1;
                     margin-right: 5px;
+                }
+                &:hover{
+                    color: $main-color;
                 }
             }
         }
@@ -533,6 +548,8 @@ section {
     .bg {
         position: absolute;
         bottom: -250px;
+        left: 50%;
+        transform: translateX(-50%);
         width: 0;
         height: 0;
         border-style: solid;
@@ -664,5 +681,44 @@ section {
         &:hover{
             background-color: darken($header-bgcolor, 5%);
         }
+    }
+}
+.shin {
+    position: absolute;
+    display: block;
+    &.b-shin{
+        width: 60px;
+    }
+    &.m-shin {
+        width: 30px;
+    }
+    &.s-shin {
+        width: 15px;
+    }
+    &.shin1{
+        top: 300px;
+        left: 70px;
+    }
+    &.shin2 {
+        top: 450px;
+        left: 10%;
+    }
+    &.shin3 {
+        top: 600px;
+        right: 10%;
+    }
+    &.shin4 {
+        top: 1200px;
+        right: 110px;
+    }
+
+    &.shin5 {
+        bottom: 450px;
+        left: 10%;
+    }
+
+    &.shin6 {
+        bottom: 350px;
+        right: 10%;
     }
 }
