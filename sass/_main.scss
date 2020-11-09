@@ -128,7 +128,7 @@ nav {
 }
 
 footer {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     padding: 18px;
     background-color: $book_guid-bgcolor;
@@ -168,7 +168,7 @@ header {
             grid-area: titBox;
             width: 477px;
             color: #fff8e9;
-            padding: 45px 15px 45px 19px;
+            padding: 25px 15px 25px 19px;
             .sub-tit{
                 font-size: 24px;
                 font-weight: 500;
@@ -178,11 +178,11 @@ header {
                 line-height: 1;
                 letter-spacing: 7px;
                 font-weight: 500;
-                padding: 32px 0;
+                padding: 28px 0;
                 color: #fff;
             }
             p{
-                font-size: 15px;
+                font-size: 17px;
                 line-height: 1.5;
                 +p{
                     margin-top: 20px;
@@ -206,8 +206,9 @@ header {
                 
             }
             p{
-                font-size: 14px;
+                font-size: 15px;
                 margin: 13px 0;
+                letter-spacing: 0;
             }
             .btn{
                 a{
@@ -366,7 +367,7 @@ section {
 .promote {
     position: relative;
     background-color: $promote-bgcolor;
-    padding-top:140px;
+    padding-top:200px;
     padding-bottom: 0;
     .dp-flex{
         justify-content:center;
@@ -475,7 +476,7 @@ section {
             width: 146px;
             height: auto;
             position: absolute;
-            top: -75px;
+            top: -85px;
             left: -50%;
             transform: translateX(-50%);
 
@@ -495,6 +496,9 @@ section {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
+        p {
+            color: #fff;
+        }
     }
 }
 .raise {
@@ -532,9 +536,6 @@ section {
             &.method5 {
                 width: 550px;
                 margin-right: 45px;
-                .notice{
-                    font-size: 14px;
-                }
             }
             &.method6 {
                 width: 375px;
@@ -545,6 +546,9 @@ section {
                     font-weight: 500;
                     font-size: 30px;
                     line-height: 1;
+                }
+                .notice {
+                    font-size: 14px;
                 }
                 .guidance {
                     position: absolute;
@@ -638,7 +642,7 @@ section {
     padding-top: 100px;
     background-color: $book_guid-bgcolor;
     text-align: center;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.5;
     .container{
         background-image: url(../images/book_guid/bg.jpg);
@@ -670,7 +674,9 @@ section {
                 }
             }
         }
-        
+        &.item6{
+            margin: 80px 0 50px;
+        }
     }
 }
 .items{
@@ -685,6 +691,14 @@ section {
             height: 5px;
             border: 1px solid $main-color;
             margin: 0 auto;
+        }
+        
+    }
+    .order {
+        font-size: 16px;
+        margin-top: 35px;
+        a{
+            color: $main-color;
         }
     }
     .dp-flex{
