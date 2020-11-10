@@ -87,7 +87,16 @@ nav {
                 i {
                     margin-right: 5px;
                 }
+                &.fb {
+                    background-color: #2f4191;
+                    padding: 21px 20px;
+                    &:hover{
+                        padding: 21px 20px 16px;
+                        border-bottom: 5px solid $sub-color;
+                    }
+                }
             }
+            
         }
     }
 
