@@ -530,7 +530,9 @@ section {
             a{
                 text-decoration: underline;
                 color: $main-color;
+                transition: all .3s;
                 &:hover{
+                    color: #c97918;
                 }
             }
             &.method1{
@@ -556,12 +558,27 @@ section {
                     font-size: 30px;
                     line-height: 1;
                 }
+            }
+            &.method7{
+                border: 0;
+                padding: 0;
+                width: 550px;
+                margin-right: 45px;
+                background-color: transparent;
                 .notice {
                     font-size: 14px;
+                    background-color: transparent;
+                    li{
+                        background-color: transparent;
+                    }
                 }
+            }
+            &.method8 {
+                padding: 0;
+                border: 0;
+                background-color: transparent;
+                width: 375px;
                 .guidance {
-                    position: absolute;
-                    bottom: -65px;
                     font-size: 14px;
                     line-height: 1.5;
                     margin: 0;
@@ -711,6 +728,11 @@ section {
         margin-top: 35px;
         a{
             color: $main-color;
+            text-decoration: underline;
+            transition: all .3s;
+            &:hover{
+                color:#c97918;
+            }
         }
     }
     .dp-flex{
