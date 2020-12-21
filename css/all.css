@@ -723,6 +723,13 @@ section {
   font-weight: 500;
 }
 
+.promote .dp-flex .content-box .book_name span {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: 300;
+}
+
 .promote .dp-flex .content-box a {
   font-family: 'Noto Serif TC', serif;
   font-size: 22px;
